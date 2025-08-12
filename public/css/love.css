@@ -190,3 +190,30 @@ input#love {
 label:hover {
   transform: scale(1.2);
 }
+/* Desktop layout */
+.container {
+  display: flex;
+  flex-direction: row; /* figure b?n tr?i, text b?n ph?i */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* figure tr?n, text d??i */
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+
+  .container figure.item {
+    margin-bottom: 20px;
+  }
+
+  .innerText {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+}

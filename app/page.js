@@ -65,8 +65,8 @@ export default function Home() {
   }, [started]);
 
   return (
-    <div
-      style={{ textAlign: "center", cursor: "pointer", userSelect: "none", display: "flex", height: "100vh", width: "100vw", justifyContent: "center", backgroundColor: "white", alignItems: "center" }}
+    <div className="container"
+      style={{ textAlign: "center", cursor: "pointer", userSelect: "none", backgroundColor: "white"}}
       onClick={() => setStarted(true)}
     >
       {started && (
