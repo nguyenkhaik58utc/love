@@ -190,9 +190,6 @@ input#love {
 label:hover {
   transform: scale(1.2);
 }
-body {
-	background-color : "white !important";
-}
 /* Desktop layout */
 .container {
   display: flex;
